@@ -37,7 +37,7 @@
       <a 
           <?php
             if(isset($_SESSION['idconnecte'])){?>
-              class="nav-link" href="#">Mon compte</a>
+              class="nav-link" href="moncompte.php">Mon compte</a>
             <?php
             }
             else{?>

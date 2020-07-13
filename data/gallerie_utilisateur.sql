@@ -29,10 +29,10 @@ CREATE TABLE `utilisateur` (
   `nomUser` varchar(50) DEFAULT NULL,
   `prenomUser` varchar(50) DEFAULT NULL,
   `pseudo` varchar(10) DEFAULT NULL,
-  `motdepasse` varchar(10) DEFAULT NULL,
+  `motdepasse` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `pseudo` (`pseudo`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +41,7 @@ CREATE TABLE `utilisateur` (
 
 LOCK TABLES `utilisateur` WRITE;
 /*!40000 ALTER TABLE `utilisateur` DISABLE KEYS */;
-INSERT INTO `utilisateur` VALUES (1,'vvdsvdwbfdw','nfgbnfx','ngnx',''),(2,'test','test','test','test'),(3,'essai','esssai','essai','essaiessai');
+INSERT INTO `utilisateur` VALUES (1,'vvdsvdwbfdw','nfgbnfx','ngnx',''),(2,'test','test','test','05a671c66aefea124cc08b76ea6d30bb'),(3,'essai','esssai','essai','essaiessai'),(4,'testpassword','grfghr','ro','7682fe272099ea26efe39c890b33675b'),(6,'vvrbgs','bgtbtrs','erfregre','794f99f55ccbae15d3e7bb16173aa3d5'),(7,',gh,jhv',',hg,hjv','thtrhtr','a08c4cc0934ec514d2fa7395c45771af'),(8,'ergrgrthtr','tjhytdjytd','jytjyjydt','05a671c66aefea124cc08b76ea6d30bb'),(9,'toto','toto','toto2','c33ca5e7eae116138d1d1b61158d58f9'),(10,'titi','titi','titi','32b1662f695bc5561d103f51051d62b5');
 /*!40000 ALTER TABLE `utilisateur` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-12 19:58:01
+-- Dump completed on 2020-07-13 16:46:19

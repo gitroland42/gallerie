@@ -22,13 +22,13 @@
             //echo("public");
         $reponse = $pdo->query('SELECT *FROM images where estPublic=1');
     }
-    else{
-   //echo("prive");
-        echo("Bonjour ".$_SESSION['userconnecte']);
+    else{?>
+   
+        <h1><?php echo("Bonjour ".$_SESSION['userconnecte']);?></h1>
+   <?php
         $reponse = $pdo->query('SELECT *FROM images');
     }
-       
-       
+          
     ?>
      
      <!-- <a title="ajout" href="addplanet.php">ajouter</a> -->
@@ -51,26 +51,16 @@
             {
             ?>
             <tr>
-            <td><?php echo($data['dateImage']); ?></td>
-            <td><img src="<?php echo('Telechargement/'.$data['nomImage']); ?>"/></td>
-            <!-- <td><?php echo('Telechargment/'.$data['nomImage']); ?></td> -->
+            <td><?php echo(date("d-m-Y",strtotime($data['dateImage']))); ?></td>
+            <td><img height="250" width="338" src="<?php echo('Telechargement/'.$data['nomImage']); ?>"/></td>
             <td><?php echo($data['lieuImage']); ?></td>
            
-            <!-- <td>
-            <a title="Voir le détail" href="planetdetail.php?id=<?php echo($data['id']); ?>">Voir le détail</a>
-            </td>
-            <td>    
-            <a title="Editer" href="editplanet.php?id=<?php echo($data['id']); ?>">editer</a>
-            
-            </td> -->
             <?php    
              }
              $reponse->closeCursor();
              ?>
         </tbody>
     </table>
-
-
 
 
 </body>

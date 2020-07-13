@@ -33,7 +33,7 @@ CREATE TABLE `images` (
   `id_user` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_user` (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `images` (
 
 LOCK TABLES `images` WRITE;
 /*!40000 ALTER TABLE `images` DISABLE KEYS */;
-INSERT INTO `images` VALUES (1,'2020-12-15',1,'public','star.jpg',2),(2,'2020-04-01',0,'privé','balmorra.jpg',2),(3,'2020-01-12',1,'public','alderaan.jpg',3),(4,'2020-07-11',0,'heureux','5f0b2a131d6c4.jpg',2),(5,'2020-07-18',1,'gdbdfbndf','5f0b2a547937d.jpg',2),(6,'2020-07-24',NULL,' cv vc vc','5f0b2b41948be.jpg',3),(7,'2020-08-02',NULL,' cx c vc','5f0b2c7cc0747.jpg',2),(8,'2020-07-11',NULL,'bfn gvn g','5f0b2cba6fa86.jpg',2),(9,'2020-07-09',NULL,'bfbfbfd','5f0b2cead5ac9.jpg',2),(10,'2020-07-14',1,'vcxb cx','5f0b2daddddc7.jpg',2),(11,'2020-07-10',0,'palnete vaisseau','5f0b2e737aaa8.jpg',2);
+INSERT INTO `images` VALUES (14,'2020-08-01',1,'toto public','5f0c5ea6a0a95.jpg',9),(15,'2020-08-08',1,'toto privé','5f0c5eebbad82.jpg',9),(16,'2020-08-11',0,'toto public','5f0c5f50263a1.jpg',9),(17,'2020-07-19',1,'toto public','5f0c5fae12979.jpg',9),(20,'2020-10-15',1,'cvn v','5f0c71a7c63c1.jpg',2);
 /*!40000 ALTER TABLE `images` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-12 19:58:01
+-- Dump completed on 2020-07-13 16:46:18

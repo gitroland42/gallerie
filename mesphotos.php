@@ -45,18 +45,22 @@
             {
             ?>
             <tr>
-            <td><?php echo($data['dateImage']); ?></td>
-            <td><img src="<?php echo('Telechargement/'.$data['nomImage']); ?>"/></td>
+            <td><?php echo(date("d-m-Y",strtotime($data['dateImage']))); ?></td>
+            <td><img  height="250" width="338" src="<?php echo('Telechargement/'.$data['nomImage']); ?>"/></td>
             <!-- <td><?php echo('Telechargment/'.$data['nomImage']); ?></td> -->
             <td><?php echo($data['lieuImage']); ?></td>
            
-            <!-- <td>
-            <a title="Voir le détail" href="planetdetail.php?id=<?php echo($data['id']); ?>">Voir le détail</a>
+            <td>
+            <a title="Détail" href="detailphoto.php?id=<?php echo($data['id']); ?>">Détail</a>
             </td>
             <td>    
-            <a title="Editer" href="editplanet.php?id=<?php echo($data['id']); ?>">editer</a>
+            <a title="Editer" href="editphoto.php?id=<?php echo($data['id']); ?>">editer</a>
             
-            </td> -->
+            </td> 
+            <td>    
+            <a title="Editer" href="supprphoto.php?id=<?php echo($data['id']); ?>">supprimer</a>
+            
+            </td> 
             <?php    
              }
              $reponse->closeCursor();
